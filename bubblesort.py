@@ -7,7 +7,7 @@ def bubble_sort(x):
             if x[j] > x[j + 1]:
                 x[j], x[j + 1] = x[j + 1], x[j]
     return x
-
+# there can add a boolean judge，if a loop has not change, then break out then loop!
 
 
 if __name__ == '__main__':
