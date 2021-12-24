@@ -36,6 +36,8 @@ def MergeSort(lists):
     left = MergeSort(lists[:num])
     right = MergeSort(lists[num:])
     return Merge(left, right)
+
+
 def Merge(left,right):
     r, l=0, 0
     result=[]
@@ -49,4 +51,6 @@ def Merge(left,right):
     result += list(left[l:])
     result += list(right[r:])
     return result
+
+
 print(MergeSort([1, 2, 3, 4, 5, 6, 7, 90, 21, 23, 45]))
